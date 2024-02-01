@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+</head>
+<body>
+    <header></header>
+    <main><section class="weather-section">
+        <div class="page">
+          <h1>LATEST WEATHER</h1>
+          <div class="archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city"></h3>
+                  <p>Currently: Mostly Sunny<span id="current-desc"></span></p>
+                  <p>
+                    Tempature: 48
+                    <span id="current-temp"></span> °F
+                  </p>
+                  <p>Wind Chill: 48<span id="current-windChill"></span> °F</p>
+                  <p>Humidity: 50<span id="current-humid"></span>%</p>
+                  <p>Wind Speed: 11<span id="current-windSpeed"></span> mph</p>
+                </div>
+              </section>
+              <div>
+                <img src="https://picsum.photos/400" alt="Random Image" />
+              </div>
+            </article>
+
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city">Magna, UT</h3>
+                <div class="flex">
+                  <div class="flex-col">
+                    
+                    <span id="dayTitle1" class="col-head">Thursday</span>
+                    <img id="weatherIcon1" class="weatherIcon" />
+                    <span class="temp-data">
+                      <span id="data1"></span>
+                      <span>46°F</span>
+                    </span>
+                  </div>
+                  <img src="https://www.freeiconspng.com/thumbs/sunny-icon/sunny-icon-0.png">
+                  <div class="flex-col">
+                    <span id="dayTitle2" class="col-head">Friday</span>
+                    <img id="weatherIcon2" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data2"></span>
+                      <span>55°F</span>
+                    </div>
+                  </div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFydIMr1aUGtyvJcdqCeVRQaS1EDSIfnOSvwJH_iXkgAJX7z50Affopu7VbTIzk0l3hY&usqp=CAU">
+                  <div class="flex-col">
+                    <span id="dayTitle3" class="col-head">Saturday</span>
+                    <img id="weatherIcon3" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data3"></span>
+                      <span>44°F</span>
+                    </div>
+                  </div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFydIMr1aUGtyvJcdqCeVRQaS1EDSIfnOSvwJH_iXkgAJX7z50Affopu7VbTIzk0l3hY&usqp=CAU">
+                  <div class="flex-col">
+                    <span id="dayTitle4" class="col-head">Sunday</span>
+                    <img id="weatherIcon4" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data4"></span>
+                      <span>44°F</span>
+                    </div>
+                  </div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFydIMr1aUGtyvJcdqCeVRQaS1EDSIfnOSvwJH_iXkgAJX7z50Affopu7VbTIzk0l3hY&usqp=CAU">
+                  <div class="flex-col">
+                    <span id="dayTitle5" class="col-head">Monday</span>
+                    <img id="weatherIcon5" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data5"></span>
+                      <span>47°F</span>
+                    </div>
+                  </div>
+                </div>
+                <img src="https://www.freeiconspng.com/thumbs/sunny-icon/sunny-icon-0.png">
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr /></main>
+    <footer></footer> 
+</body>
+</html>
