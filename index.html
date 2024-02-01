@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project Portal</title>
+    <title>A Title</title>
 </head>
 <body>
-    <nav>
-        <h2>Project Portal</h2>
-        <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
-        </ul>
-    </nav>
-    
-    <div class="cards">
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h2>Html Project</h2>
-          </div>
-          <div class="card-back">
-            <a href="./project1.html">Project Link</a>
-          </div>
-        </div>
+    <h1>Chili cheese fries are really good</h1>
+    <div class="wrapper">
+        R<input type="range" min="0" max="225" value="0" id="red" oninput="colors()">
+      </div> 
+      <div class="wrapper">
+        G<input type="range" min="0" max="225" value="0" id="green" oninput="colors()">
       </div>
+      <div class="wrapper">
+        B<input type="range" min="0" max="255" value="0" id="blue" oninput="colors()">
+      </div>
+      
+      <section class="container">
+        <form id="my-form">
+            <h1>What's Your Favorite Food?</h1>
+            <div class="msg"></div>
+            <div>
+                <label for="favFood">Favorite Food</label>
+                <input type="text" id="favFood">
+            </div>
+            <input class="btn" type="submit" value="Submit">
+        </form>
+
+        <ul id="users"></ul>
+        <!--<ul class="items">
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+        </ul>-->  
+      </section>
+      <script>
+        function colors(){
+            var red= document.getElementById("red").value;
+            var green= document.getElementById("green").value;
+            var blue= document.getElementById("blue").value;
+            document.body.style.backgroundColor = 'rgb('+ red +','+ green +','+ blue +')';
+            document.getElementById("output").innerHTML = 'rgb('+ red +','+ green +','+ blue +')';
+        }
+      </script>
     </div>
-    <footer class="bg-dark">
-      © 2023 | Alex Olson | Utah |
-        <a
-          id="ttechLink"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://tooeletech.edu/"
-          >Tooele Technical College</a>
-        
-        <br />
-        Last updated: Tue Nov 21 2023
-    </footer>
+    <footer></footer>
   <script src="script.js"></script>
 </body>
 </html>
